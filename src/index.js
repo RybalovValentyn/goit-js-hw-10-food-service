@@ -19,7 +19,9 @@ foodContainer.insertAdjacentHTML('beforeend', cardsMarkup);
 
 const btnRef = document.querySelector('#theme-switch-toggle');
 
-
+if (!localStorage.getItem('myData')) {
+    bodyTRef.classList.add(Theme.LIGHT);
+}
 localStorageSetTheme();
 
 console.log(btnRef);
