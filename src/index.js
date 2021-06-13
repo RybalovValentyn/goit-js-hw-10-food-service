@@ -24,7 +24,6 @@ if (!localStorage.getItem('myData')) {
 }
 localStorageSetTheme();
 
-console.log(btnRef);
 function  CreateFoodCardsMark(foods) {
  
     return foods.map(foodCard).join('')
